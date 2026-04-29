@@ -1,0 +1,142 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 12px;
+  width: 250px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0072ff;
+  transform: scale(1.05);
+}
+.card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  padding: 20px;
+  border-radius: 16px;
+  width: 260px;
+  text-align: center;
+
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+@media (max-width: 480px) {
+  input {
+    width: 100%;
+  }
+
+  .input-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .forecast-card {
+    width: 100%;
+  }
+}
+.forecast {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  padding: 10px;
+  border-radius: 12px;
+  width: 120px;
+
+  text-align: center;
+  color: white;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.forecast-card p {
+  margin: 5px 0;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+}
+.dark {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
