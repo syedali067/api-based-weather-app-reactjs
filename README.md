@@ -6,7 +6,7 @@ A modern weather application built with **React.js** that provides real-time wea
 
 ## 🚀 Live Demo
 
-👉 [https://your-deployed-link.vercel.app]([https://your-deployed-link.vercel.app](https://api-based-weather-app-reactjs-b4mzx7o0j-ali067.vercel.app/))
+👉 https://api-based-weather-app-reactjs-b4mzx7o0j-ali067.vercel.app/
 
 
 ---
